@@ -212,14 +212,6 @@ Through this project, I learned:
 
 ---
 
-# Resume Description
-
-**Employee Task Management System | Java, OOP, Collections, Exception Handling | GitHub**
-
-- Built a console-based task management system in Java using OOP principles — Employee and Manager classes with inheritance, Manageable interface for task operations, and TaskStatus enum for state management.
-- Implemented Collections layer using ArrayList for employee storage and HashMap<String, List<Task>> for task assignment; added custom exceptions (EmployeeNotFoundException) with structured error handling throughout.
-- Persisted data using Java File I/O (FileWriter/BufferedReader); followed clean code practices with Javadoc comments and Git version control with meaningful commits.
-
 ---
 
 # Author
