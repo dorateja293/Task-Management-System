@@ -1,32 +1,21 @@
 package model;
 
-/**
- * Task class represents a task in the Task Management System.
- * Each task has an ID, title, description, and status.
- */
 public class Task {
     
-    private int taskId;
+    private String taskId;
     private String title;
     private String description;
     private TaskStatus status;
     
-    /**
-     * Constructor to create a new Task
-     * @param taskId unique identifier for the task
-     * @param title title of the task
-     * @param description detailed description of the task
-     * @param status current status of the task (PENDING, IN_PROGRESS, DONE)
-     */
-    public Task(int taskId, String title, String description, TaskStatus status) {
+    public Task(String taskId, String title, String description) {
         this.taskId = taskId;
         this.title = title;
         this.description = description;
-        this.status = status;
+        this.status = TaskStatus.PENDING;
     }
     
     // Getters
-    public int getTaskId() {
+    public String getTaskId() {
         return taskId;
     }
     
@@ -43,7 +32,7 @@ public class Task {
     }
     
     // Setters
-    public void setTaskId(int taskId) {
+    public void setTaskId(String taskId) {
         this.taskId = taskId;
     }
     
@@ -59,16 +48,11 @@ public class Task {
         this.status = status;
     }
     
-    /**
-     * Returns a string representation of the Task
-     */
     @Override
     public String toString() {
-        return "Task{" +
-                "taskId=" + taskId +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", status=" + status +
-                '}';
+        return "Task ID: " + taskId +
+                ", Title: " + title +
+                ", Description: " + description +
+                ", Status: " + status;
     }
 }
